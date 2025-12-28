@@ -1,0 +1,78 @@
+body {
+  background: url(./assets/sl_030220_28570_03.jpg) no-repeat top center/cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #000000;
+  background-image: "./";
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.conteudo {
+  color: rgb(107, 100, 100);
+  font-size: 16px;
+}
+
+.logo-area img {
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 40px;
+
+  text-align: center;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 5px;
+}
