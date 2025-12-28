@@ -9,10 +9,34 @@
     />
 
     <meta charset="UTF-8" />
-    <meta http-equiv="X-AU-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Adicionando container */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Ajustes para o conteúdo em telas maiores */
+      .conteudo pre {
+        white-space: pre-wrap; /* Faz o texto quebrar automaticamente */
+        word-wrap: break-word; /* Quebra palavras longas */
+        line-height: 1.6;
+      }
+
+      /* Responsividade para mobile */
+      @media screen and (max-width: 768px) {
+        .conteudo pre {
+          white-space: pre-wrap; /* Quebra de linha adaptada */
+          font-size: 14px; /* Ajuste do tamanho da fonte */
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,6 +48,7 @@
         <h1>Connect Eletrônica</h1>
       </div>
 
+      <!-- Menu normal (desktop) -->
       <div class="menu">
         <nav>
           <a href="index.html">Início</a>
@@ -32,13 +57,15 @@
         </nav>
       </div>
 
-      <button onclick="animarMenu()" id="btn-menu">
+      <!-- Botão de menu mobile -->
+      <button id="btn-menu" class="btn-menu">
         <span class="linha"></span>
         <span class="linha"></span>
         <span class="linha"></span>
       </button>
 
-      <div class="menu-mobile">
+      <!-- Menu mobile -->
+      <div class="menu-mobile" id="menu-mobile">
         <nav>
           <a href="index.html">Início</a>
           <a href="quem-somos.html">Quem Somos</a>
@@ -48,10 +75,10 @@
     </header>
 
     <section class="conteudo">
-      <h2>Quem Somos</h2>
-      <pre>
-
-              Manutenção Especializada em Máquinas de Fusão e OTDR
+      <div class="container">
+        <h2>Quem Somos</h2>
+        <pre>
+Manutenção Especializada em Máquinas de Fusão e OTDR
 Trabalhamos com diagnóstico, reparo e calibração profissional
 de máquinas de fusão de diversas marcas, incluindo INNO,
 Fujikura, FiberHome, SignalFire e outras. Atendemos desde
@@ -82,9 +109,8 @@ Oferecemos também:
 Se sua máquina está apresentando falhas, lentidão, baixa
 qualidade de fusão, avisos de bloqueio ou qualquer erro,
 fale com a gente agora e receba orientação imediata.
-
-            </pre
-      >
+        </pre>
+      </div>
     </section>
 
     <footer>
