@@ -14,22 +14,57 @@
     <title>Perfil</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+  <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
     <header>
       <div class="logo-area">
-        <img
-          src="./assets/WhatsApp Image 2025-11-27 at 09.48.31.jpeg"
-          alt="Logo da Empresa"
-        />
+        <img src="./assets/WhatsApp Image 2025-11-27 at 09.48.31.jpeg" alt="Logo da Empresa" />
         <h1>Connect Eletrônica</h1>
       </div>
+      
+      <!-- Menu normal (desktop) -->
+      <div class="menu">
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="quem-somos.html">Quem Somos</a>
+          <a href="contate-nos.html">Contate-nos</a>
+        </nav>
+      </div>
+      
+      <!-- Botão de menu mobile -->
+      <button id="btn-menu" class="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
 
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="quem-somos.html">Quem Somos</a>
-        <a href="contate-nos.html">Contate-nos</a>
-      </nav>
+      <!-- Menu mobile -->
+      <div class="menu-mobile" id="menu-mobile">
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="quem-somos.html">Quem Somos</a>
+          <a href="contate-nos.html">Contate-nos</a>
+        </nav>
+      </div>
     </header>
+
+    <!-- Resto do conteúdo da página -->
+    <footer>
+      <p>© 2025 Connect Eletrônica - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
 
     <section class="hero">
       <div class="hero-content">
@@ -45,7 +80,16 @@
       <p>© 2025 Connect Eletrônica - Todos os direitos reservados</p>
     </footer>
 
+    <script>
+      function animar() {
+        const btn = document.getElementById(btn - menu)
+        btn.classList.toggle("ativar")
+      }
+    </script>
+
     <!-- START Widget WhastApp hospedagemwordpresspro -->
+    <script src="animar.js"></script>
+
     <a
       href="https://api.whatsapp.com/send?phone=5511978990881&text="
       id="waurlsite"
