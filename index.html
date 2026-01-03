@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-AU-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect Eletrônica</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil</title>
+
+    <title>Connect Eletrônica</title>
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
       <div class="logo-area">
-        <img src="./assets/WhatsApp Image 2025-11-27 at 09.48.31.jpeg" alt="Logo da Empresa" />
+        <img
+          src="./assets/WhatsApp Image 2025-11-27 at 09.48.31.jpeg"
+          alt="Logo da Empresa"
+        />
         <h1>Connect Eletrônica</h1>
       </div>
-      
-      <!-- Menu normal (desktop) -->
+
+      <!-- Menu desktop -->
       <div class="menu">
         <nav>
           <a href="index.html">Início</a>
@@ -36,8 +38,8 @@
           <a href="contate-nos.html">Contate-nos</a>
         </nav>
       </div>
-      
-      <!-- Botão de menu mobile -->
+
+      <!-- Botão menu mobile -->
       <button id="btn-menu" class="btn-menu">
         <span class="linha"></span>
         <span class="linha"></span>
@@ -54,16 +56,7 @@
       </div>
     </header>
 
-    <!-- Resto do conteúdo da página -->
-    <footer>
-      <p>© 2025 Connect Eletrônica - Todos os direitos reservados</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-
-
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
         <h2>Soluções em Telecomunicações</h2>
@@ -74,19 +67,24 @@
       </div>
     </section>
 
+    <section class="slider-section">
+      <div class="slider">
+        <img src="./assets/fusão 1.png" class="slide active" />
+        <img src="./assets/antena 1.png" class="slide" />
+        <img src="./assets/teste 1.png" class="slide" />
+        <img src="./assets/fusão 2.png" class="slide" />
+        <img src="./assets/antena 2.png" class="slide" />
+        <img src="./assets/teste 2.png" class="slide" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
       <p>© 2025 Connect Eletrônica - Todos os direitos reservados</p>
     </footer>
 
-    <script>
-      function animar() {
-        const btn = document.getElementById("btn-menu")
-        btn.classList.toggle("ativar")
-      }
-    </script>
-
+    <script src="animar.js" defer></script>
     <!-- START Widget WhastApp hospedagemwordpresspro -->
-    <script src="animar.js"></script>
 
     <a
       href="https://api.whatsapp.com/send?phone=5511978990881&text="
@@ -129,7 +127,7 @@
     >
       1
     </span>
-    
+
     <script type="text/javascript">
       function showIt2() {
         document.getElementById("msg1").style.visibility = "visible"

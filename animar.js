@@ -16,3 +16,29 @@ linksMenu.forEach((link) => {
     btnMenu.classList.remove("ativo") // Restaura o botão
   })
 })
+
+document.addEventListener("click", (e) => {
+  if (
+    menuMobile.classList.contains("abrir") &&
+    !menuMobile.contains(e.target) &&
+    !btnMenu.contains(e.target)
+  ) {
+    menuMobile.classList.remove("abrir")
+    btnMenu.classList.remove("ativo")
+  }
+})
+
+//slider//
+const slides = document.querySelectorAll(".slide")
+let index = 0
+
+function showSlide() {
+  slides.forEach((slide) => slide.classList.remove("active"))
+
+  slides[index].classList.add("active")
+
+  index = (index + 1) % slides.length
+}
+
+// Troca a cada 4 segundos
+setInterval(showSlide, 3000)

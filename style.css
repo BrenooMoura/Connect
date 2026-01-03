@@ -367,3 +367,36 @@ form button:hover {
     width: 100%;
   }
 }
+
+/* Seção do slider */
+.slider-section {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* Container do slider */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: clamp(220px, 30vw, 380px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Imagens do slide */
+.slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 🔥 ajuste automático */
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+/* Slide ativo */
+.slide.active {
+  opacity: 1;
+}
