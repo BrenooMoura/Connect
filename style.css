@@ -392,7 +392,7 @@ form button:hover {
 .slider {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 500px;
   height: clamp(220px, 30vw, 380px);
   margin: 0 auto;
   overflow: hidden;
@@ -408,6 +408,12 @@ form button:hover {
   object-fit: contain; /* 🔥 ajuste automático */
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Borda */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
 }
 
 /* Slide ativo */
