@@ -84,6 +84,7 @@
 </form>
 
 
+
     </section>
 
         
@@ -95,43 +96,49 @@
       <p>© 2025 Connect Eletrônica - Todos os direitos reservados</p>
     </footer>
 
-    <script>
-      function animar() {
-        const btn = document.getElementById("btn-menu")
-        btn.classList.toggle("ativar")
-      }
-    </script>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
-  emailjs.init("JpVgPLu--Bd4uSY1-")
+  console.log("EmailJS:", typeof emailjs)
 
-  document
-    .getElementById("form-contato")
-    .addEventListener("submit", function (e) {
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof emailjs === "undefined") {
+      alert("EmailJS NÃO carregou")
+      return
+    }
+
+    emailjs.init("JpVgPLu--Bd4uSY1-")
+
+    const form = document.getElementById("form-contato")
+
+    form.addEventListener("submit", function (e) {
       e.preventDefault()
 
       emailjs.sendForm(
         "service_r736acu",
-        "template_vwgp3bl",
+        "template_ho5ixwo",
         this
       ).then(
-        () => {
+        function () {
           alert("Mensagem enviada com sucesso!")
-          this.reset()
+          form.reset()
         },
-        (error) => {
-          alert("Erro ao enviar. Tente novamente.")
+        function (error) {
           console.error(error)
+          alert("Erro ao enviar")
         }
       )
     })
+  })
 </script>
 
+<!-- Menu mobile -->
+<script src="animar.js"></script>
 
-    
-    <script src="animar.js"></script>
+<!-- Seu JS do menu -->
+<script src="animar.js"></script>
 
 
     <!-- START Widget WhastApp hospedagemwordpresspro -->

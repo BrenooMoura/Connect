@@ -164,6 +164,8 @@ ul li a:hover {
   background-color: white;
   margin: 6px 0;
   display: block;
+  transition: 0.3s;
+  position: relative;
 }
 
 /* Menu mobile */
