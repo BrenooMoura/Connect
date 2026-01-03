@@ -6,11 +6,33 @@
 
 body {
   background: url(./assets/sl_030220_28570_03.jpg) no-repeat top center/cover;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
+  color: #eaeaea;
   margin: 0;
   background-color: #f4f4f4;
-  color: #333;
   background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+p,
+label {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 header {
@@ -256,6 +278,13 @@ form textarea {
   border-radius: 4px;
   font-size: 16px;
 }
+form input,
+form textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: 0.3s;
+}
 
 form button {
   background-color: #003366;
@@ -264,6 +293,8 @@ form button {
   padding: 12px 0;
   font-size: 18px;
   cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 form button:hover {
@@ -320,5 +351,19 @@ form button:hover {
 
   .conteudo pre {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  #container {
+    width: 100%;
   }
 }
